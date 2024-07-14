@@ -1,6 +1,5 @@
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
-
 import { gameify} from "../assets";
 import { navigation } from "../constants";
 import Button from "./Button";
@@ -73,7 +72,7 @@ const Header = () => {
         >
           New account
         </a>
-        <Button className="hidden lg:flex" href="#login">
+        <Button className="hidden lg:flex" href="/login">
           Sign in
         </Button>
 

@@ -94,8 +94,8 @@ export const brainwaveServicesIcons = [
 export const roadmap = [
   {
     id: "0",
-    title: "Voice recognition",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
+    title: "Scanning Notes",
+    text: "Scan your own notes and add them to our AI to make questions sets to be used in game",
     date: "May 2023",
     status: "done",
     imageUrl: roadmap1,
@@ -116,14 +116,6 @@ export const roadmap = [
     date: "May 2023",
     status: "done",
     imageUrl: roadmap3,
-  },
-  {
-    id: "3",
-    title: "Integration with APIs",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-    date: "May 2023",
-    status: "progress",
-    imageUrl: roadmap4,
   },
 ];
 
