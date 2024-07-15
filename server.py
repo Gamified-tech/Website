@@ -3,11 +3,22 @@ import firebase_admin
 from firebase_admin import auth, credentials
 from flask_cors import CORS
 
+
+"""
+with open("game-ify-firebase-adminsdk-ejctv-8f6cdc4f32.json", "r") as file:
+    content = file.read()
+    print("File content:", content)  # Ensure the content is correct JSON
+    
+
+"""
+
 app = Flask(__name__)
 CORS(app)
 
 # Initialize Firebase Admin SDK
 cred = credentials.Certificate("game-ify-firebase-adminsdk-ejctv-8f6cdc4f32.json")
+
+
 firebase_admin.initialize_app(cred)
 
 @app.route("/api/login", methods=["POST"]) 
@@ -24,4 +35,3 @@ def login():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
